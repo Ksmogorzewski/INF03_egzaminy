@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Malarz</title>
+    <link rel="stylesheet" href="styl_1.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Malowanie pokoi i biur</h1>
+    </div>
+    <div class="main">
+        <div class="left">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="mieszaniny.html">Mieszaniny</a></li>
+                <li><a href="cena.html">Wyceniamy</a></li>
+            </ul>
+        </div>
+        <div class="mid">
+            <h2>Zapotrzebowanie na farbę</h2>
+            <label for="malowanie">Powierzchnia malowania(m<sup>2</sup>)</label>
+            <input type="number" id="ilosc" name="malowanie">
+            <button type="submit" onclick="liczenie()">Policz</button>
+            <p id="result"></p>
+        </div>
+        <div class="right"><img src="obraz.png" alt="Próbki farb"></div>
+    </div>  
+    <div class="footer">
+        <h3>Malarz</h3>
+        <p>Stronę opracował: 00000000000</p>
+    </div>
+    <script>
+        function liczenie(){
+            var metry = 0;
+            var ilosc = 0;
+            metry = document.getElementById('ilosc').value;
+            if(metry%4 === 0){
+                ilosc = metry/4;
+            } else{
+                ilosc = Math.floor(metry/4)+1;
+            }
+            document.getElementById('result').innerHTML="Liczba potrzebynch puszek: " + ilosc;
+        }
+    </script>
+</body>
+</html>
