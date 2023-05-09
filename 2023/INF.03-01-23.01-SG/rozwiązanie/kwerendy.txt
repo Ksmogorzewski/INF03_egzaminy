@@ -1,0 +1,4 @@
+1. SELECT cena, pojemnosc FROM farby WHERE kolor="czerwony";
+2. 
+3.
+4.
