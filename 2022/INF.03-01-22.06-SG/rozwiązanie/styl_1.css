@@ -1,5 +1,11 @@
 body{
     font-family: Helvetica;
+    padding: 0;
+    margin: 0;
+}
+
+h3{
+    margin: 0;
 }
 
 .header, .footer{
@@ -10,3 +16,52 @@ body{
     text-align: center;
 }
 
+.middle{
+    display: flex;
+}
+
+.left{
+    width: 55%;
+}
+
+.left1, .left2{
+    background-color: #EFEFEF;
+}
+
+.left1{
+    height: 150px;
+}
+
+.left2{
+    height: 300px;
+}
+
+.right{
+    background-color: #4FB3BF;
+    width: 45%;
+    height: 450px;
+    text-align: center;
+}
+
+img{
+    box-shadow: 10px 10px 7px dimgray;
+    margin: 20px;
+}
+
+table, tr, td{
+    border: 1px solid #4FB3BF;
+    border-collapse: collapse;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+}
+
+td, th{
+    padding: 4px;
+}
+
+tr:hover{
+    background-color: #4FB3BF;
+}
